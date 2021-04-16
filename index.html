@@ -5,67 +5,192 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Оставшиеся игры для приставки Xbox 360</title>
-</head>
-<body>
+	<!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon" -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+	<link rel="manifest" href="./img/icon/site.webmanifest">
+	<link rel="mask-icon" href="./img/icon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
 	<style>
+		:root{
+			--main-bgcolor: lightgray;
+			--alter-bgcolor: rgb(77, 119, 82);
+			--main-color: azure;
+			--alter-color: brown;
+		}
+		
+		/*disabled link*/
 		.not-active {
 			pointer-events: none;
 			cursor: default;
 		}
-		body{max-width: 820px; margin: 0 auto; background: gray;
+		/*main*/
+		*{box-sizing: border-box; padding: 0;  margin: 0;}
+		body{max-width: 820px; margin: 0 auto;
+			background: var(--main-bgcolor); color: var(--main-color);
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 400;
 			line-height: 1.4;
 			font-size: 125%;
 		}
-		body>div{display: flex; justify-content: space-around; padding: 4px; flex-wrap: wrap;  }
-		h1,h3{text-align: center; color: azure;}
-		h3{margin-bottom: 8px;}
-		a{padding: 4px; text-decoration: none; text-align: center;flex-grow: 1; background-color: azure; margin: 4px;
+		body>div{
+			display: flex; justify-content: space-around; flex-wrap: wrap;
+			background: var(--alter-bgcolor);
+		}
+		h1,h2{
+			color: var(--main-color);
+			background: var(--alter-bgcolor);
+			text-align: center;
+		}
+		h2{font-weight: lighter; padding-top: 16px; padding-bottom: 8px;}
+		h2{margin: 2px 0 1px 0;}
+		/*objects*/
+		figcaption>a{padding: 4px;}
+		figure{
+			text-align: center;
+			width: 260px; margin: 4px; padding: 4px;
+		}
+		figure>a{
+			display: inline-block;
+			width: 260px; height: 370px;
+		}
+		figure>a:hover{box-shadow: 0 10px 14px rgba(54, 35, 54, 0.25), 0 8px 8px rgba(54, 35, 54, 0.25);}
+		figure>a>img{
+			width: 100%; height: 100%; border-radius: 4px;
+		}
+		a{
+			color: var(--main-color); text-decoration: none; 
 			border-radius: 4px;
 		}
-		a:hover{box-shadow: 0 5px 7px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);}
-		</style>
-		<h1>Оставшиеся игры для приставки Xbox&nbsp;360</h1>
-		<h3>Пострелушки в общем фигня</h3>
-		<div>
-		<a href="https://www.youtube.com/watch?v=HHQoQ1npNBs">Brutal Legend</a>
-		<a href="https://www.youtube.com/watch?v=-5OzK5JVXpg">Golden Axe (девушка с мечом)</a>
-		<a href="https://www.youtube.com/watch?v=tBSa62QRRNM">The Saboteur</a>
-		<a href="https://www.youtube.com/watch?v=2iGkW9uM0a8">Army of Two (dual)</a>
-		<a href="https://www.youtube.com/watch?v=WNA0f6V3ivU">Splinter Cell Conviction</a>
-		<a href="https://www.youtube.com/watch?v=qTrxE1Ul3lg">Rise of the Argonauts</a>
-		<a href="https://www.youtube.com/watch?v=Mc3lvKSuwPg">Metro 2033</a>
-		<a href="https://www.youtube.com/watch?v=h6Xy4r0IGP4&t=274s">Ultimate Alliance 2</a>
-		<a href="https://www.youtube.com/watch?v=a1j3LFa5Yfc&t=23s">Ninja Blade</a>
-		<a href="https://www.youtube.com/watch?v=uyh1L3YwONU">Ghost Busters (dual)</a>
-		<a href="https://www.youtube.com/watch?v=V8F56LSGUMM">Darkness</a>
-		<a href="https://www.youtube.com/watch?v=aFKcBjaqJLA">Call of Juarez</a>
-		<a href="https://www.youtube.com/watch?v=B9SKJC90l5Y">Conan</a>
-		<a href="https://www.youtube.com/watch?v=E0hgkHIFZVE&t=1s">Halo 3</a>
-		<a href="https://www.youtube.com/watch?v=7DH5F4_XggE">Gears of War 2 (dual)</a>
-		<a href="https://www.youtube.com/watch?v=kObmAFQTAtU">Call of Duty 3</a>
-		<a href="https://www.youtube.com/watch?v=acU2rQcrqq4">Armored Core</a>
-		<a href="https://www.youtube.com/watch?v=6K8DSV4n1io">Black</a>
-		<a href="https://www.youtube.com/watch?v=1HyzZ-1W558">Wolfenstein</a>
-		</div>
-		<h3>Симуляторы</h3>
-		<div>
-		<a href="https://www.youtube.com/watch?v=KkcKYynVMGA">Flatout Ultimate Carnage (машинки)</a>
-		<a href="https://www.youtube.com/watch?v=DcAvIEd0Ee8">Project Gotham Racing 4 (машинки)</a>
-		<a href="https://www.youtube.com/watch?v=G8nql1uTm4A&t=118s">Ил2 Штурмовик</a>
-		<a href="#" class="not-active">Самолетики</a>
-		</div>
-		<h3>Спорт</h3>
-		<div>
-		<a href="https://www.youtube.com/watch?v=CuoW7Ilbzbk&t=6s">FIFA 2009 (dual)</a>
-		<a href="https://www.youtube.com/watch?v=cQ2k2bSJMz0">PES 2010 (dual)</a>
-		</div>
-		<h3>Стратегии</h3>
-		<div>
-		<a href="https://www.youtube.com/watch?v=CxZ6_lA05WU">Halo Wars (типа старкрафт</a>
-		<a href="https://www.youtube.com/watch?v=9mF2s9NuFq0">Blood Bowl (usa футбол)</a>
-		</div>
+	</style>
+	<title>Оставшиеся игры для приставки Xbox 360</title>
+</head>
+<body>
+	<h1>Оставшиеся игры для приставки Xbox&nbsp;360</h1>
+	<h2>Пострелушки, Резня</h2>
+	<div>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=HHQoQ1npNBs"><img src="img/brutal-legend-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>
+				<a href="https://piterplay.com/xbox-360/igry-xbox-360/igra-brutal-legend-xbox-360-b-u">Brutal Legend</a>
+			</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=-5OzK5JVXpg"><img src="img/golden-axe-beast-rider-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Golden Axe (девушка с мечом)</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=tBSa62QRRNM"><img src="img/the-saboteur-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>The Saboteur</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=2iGkW9uM0a8"><img src="img/army-of-two-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Army of Two (dual)</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=WNA0f6V3ivU"><img src="img/tom-clancy-s-splinter-cell-conviction-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Splinter Cell Conviction</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=qTrxE1Ul3lg"><img src="img/rise-of-the-argonauts-playstation-3.webp"  alt="image for game"></a>
+			<figcaption>Rise of the Argonauts</figcaption>
+		</figure>
+		<figure>
+				<a href="https://www.youtube.com/watch?v=Mc3lvKSuwPg"><img src="img/metro-2033-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Metro 2033</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=h6Xy4r0IGP4&t=274s"><img src="img/ultimate-alliance-2-xbox-360-bu.webp"  alt="image for game"></a>
+			<figcaption>Ultimate Alliance 2</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=a1j3LFa5Yfc&t=23s"><img src="img/ninja-blade-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Ninja Blade</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=uyh1L3YwONU"><img src="img/ghostbusters-the-video-game-playstation-3.webp"  alt="image for game"></a>
+			<figcaption>Ghost Busters (dual)</figcaption>
+		</figure>
+		<figure>
+				<a href="https://www.youtube.com/watch?v=V8F56LSGUMM"><img src="img/the-darkness-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Darkness</figcaption>
+		</figure>
+		<figure>
+				<a href="https://www.youtube.com/watch?v=aFKcBjaqJLA"><img src="img/call-of-juarez-bound-in-blood-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Call of Juarez</figcaption>
+		</figure>
+		<figure>
+				<a href="https://www.youtube.com/watch?v=B9SKJC90l5Y"><img src="img/conan-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Conan</figcaption>
+		</figure>
+		<figure>
+				<a href="https://www.youtube.com/watch?v=E0hgkHIFZVE&t=1s"><img src="img/halo-3-limited-edition-xbox-3603.webp"  alt="image for game"></a>
+			<figcaption>Halo 3</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=7DH5F4_XggE"><img src="img/gears-of-war-2-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Gears of War 2 (dual)</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=kObmAFQTAtU"><img src="img/call-of-duty-3-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Call of Duty 3</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=acU2rQcrqq4"><img src="img/armored-core-for-answer-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Armored Core</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=6K8DSV4n1io"><img src="img/black-xbox-360-front-cover.webp"  alt="image for game"></a>
+			<figcaption>Black</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=1HyzZ-1W558"><img src="img/wolfenstein-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Wolfenstein</figcaption>
+		</figure>
+	</div>
+	<h2>Симуляторы</h2>
+	<div>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=KkcKYynVMGA"><img src="img/flatout-ultimate-carnage-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Flatout Ultimate Carnage</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=DcAvIEd0Ee8"><img src="img/project-gotham-racing-4-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Project Gotham Racing 4</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=G8nql1uTm4A&t=118s"><img src="img/il2-sturmovik-xbox-360-bu.webp"  alt="image for game"></a>
+			<figcaption>Ил2 Штурмовик</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=826Dl3oaWOI"><img src="img/after-burner-black-falcon-psp.webp"  alt="image for game"></a>
+			<figcaption>After Burner Black Falcon</figcaption>
+		</figure>
+	</div>
+	<h2>Спорт</h2>
+	<div>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=CuoW7Ilbzbk&t=6s"><img src="img/fifa-09-xbox-360-bu1.webp"  alt="image for game"></a>
+			<figcaption>FIFA 2009 (dual)</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=cQ2k2bSJMz0"><img src="img/pes-2010-xbox360-1.webp"  alt="image for game"></a>
+			<figcaption>PES 2010 (dual)</figcaption>
+		</figure>
+	</div>
+	<h2>Стратегии</h2>
+	<div>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=CxZ6_lA05WU"><img src="img/halo-wars-xbox-360.webp"  alt="image for game"></a>
+			<figcaption>Halo Wars (типа старкрафт)</figcaption>
+		</figure>
+		<figure>
+			<a href="https://www.youtube.com/watch?v=9mF2s9NuFq0"><img src="img/blood-bowl.webp"  alt="image for game"></a>
+			<figcaption>Blood Bowl (usa футбол)</figcaption>
+		</figure>
+	</div>
 </body>
 </html>
